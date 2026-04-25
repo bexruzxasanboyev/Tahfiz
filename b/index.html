@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tahfiz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+        
+        html,
+        body {
+            overflow-x: hidden
+        }
+        
+        .hero {
+            padding-bottom: 16px;
+        }
+        
+        .hero__container {
+            max-width: 400px;
+            width: 100%;
+            background-image: url(./images/bg.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 0 10px;
+            background-position: center;
+            margin: 0 auto;
+            padding-top: 15px;
+        }
+        
+        .hero__top {
+            display: flex;
+            align-items: center;
+            max-width: 216px;
+            margin: 0 auto;
+            gap: 8px;
+            width: 100%;
+            padding: 0 8px;
+            margin-bottom: 19px;
+            border-radius: 8px;
+            border: 0.5px solid #000000;
+            justify-content: center;
+        }
+        
+        .hero__top p {
+            font-family: Inter, sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 38px;
+        }
+        
+        .hero__top p span {
+            background-color: #E38227;
+            border-radius: 4px;
+            color: white;
+            padding: 2px 5px;
+        }
+        
+        .hero__title {
+            font-family: Roboto, sans-serif;
+            font-weight: 700;
+            position: relative;
+            text-shadow: 0px 3px 3px 0px #000000B0;
+            font-size: clamp(26.5px, 8.3vw, 33px);
+            line-height: 110%;
+            text-align: center;
+            margin-bottom: 29px;
+            text-transform: uppercase;
+        }
+        
+        .hero__title span {
+            color: #E48225;
+        }
+        
+        .hero__wrapper {
+            padding: 0 10px;
+        }
+        
+        .hero__images {
+            max-width: clamp(260px, 81vw, 278px);
+            width: 100%;
+            height: auto;
+            margin-left: auto;
+            margin-bottom: -80px;
+            margin-right: auto;
+            transform: translateX(-20px);
+            display: flex;
+        }
+        
+        .hero__bg {
+            max-width: 573px;
+            width: 100%;
+            margin-top: -270px;
+            height: auto;
+        }
+        
+        .hero__btn {
+            max-width: 368px;
+            width: 100%;
+            border-radius: 16px;
+            padding: 28px 0;
+            font-family: Poppins, sans-serif;
+            background: radial-gradient(35.48% 57.87% at 50% 100%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(90deg, #D33737 0%, #FD4040 52.29%, #D33737 100%);
+            box-shadow: 0px 5px 0px 0px #950F05;
+            font-weight: 600;
+            font-size: clamp(26px, 5vw, 28px);
+            line-height: 120%;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 25px;
+            border: none;
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+            justify-content: center;
+            margin-right: auto;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        .hero__list {
+            max-width: 346px;
+            width: 100%;
+            border-radius: 10px;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 24px;
+            gap: 12px;
+            flex-direction: column;
+        }
+        
+        .hero__item {
+            display: flex;
+            align-items: center;
+            background-color: #E98D3F;
+            border-radius: 8px;
+            max-width: 283px;
+            width: 100%;
+            padding: 6px 5px;
+        }
+        
+        .hero__item p {
+            border: 0.5px solid #FFFFFF;
+            border-radius: 8px;
+            display: flex;
+            max-width: 273px;
+            width: 100%;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 6px 6px 8px;
+        }
+        
+        .hero__item p span {
+            font-family: Inter, sans-serif;
+            font-weight: 300;
+            font-size: clamp(15px, 4.5vw, 16px);
+            line-height: 18px;
+            color: white;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="./css/main.css">
+    </noscript>
+</head>
+
+<body>
+    <main>
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__top">
+                    <img src="./images/clock.avif" loading="lazy" decoding="async" width="22" height="22" alt="clock">
+                    <p>2-3-May | <span>Soat: 20:30</span></p>
+                </div>
+
+                <h1 class="hero__title">
+                    qanday qilib <span>arab tilini <br> 0 dan mukammal</span> <br> o'rganish mumkin
+                </h1>
+
+                <img class="hero__images" src="./images/speaker.avif" loading="lazy" decoding="async" width="278" height="359" alt="speaker">
+                <img class="hero__bg" src="./images/mainImg.avif" loading="lazy" decoding="async" width="573" height="272" alt="speaker">
+                <button class="hero__btn" onclick="location.href='../thankYou.html'">Bepul qatnashish</button>
+                <ul class="hero__list">
+                    <li class="hero__item">
+                        <p>
+                            <img src="./images/info/1.avif" loading="lazy" decoding="async" width="30" height="39" alt="icon">
+                            <span>Qur'oni Karimning ilk oyatlari <br> haqida gaplashamiz</span>
+                        </p>
+                    </li>
+                    <li class="hero__item" style="margin-left: auto;">
+                        <p>
+                            <img src="./images/info/2.avif" loading="lazy" decoding="async" width="41" height="41" alt="icon">
+                            <span>Arab tilida muhim bo'lgan <br> qoidalarni o'rganasiz</span>
+                        </p>
+                    </li>
+                    <li class="hero__item">
+                        <p>
+                            <img src="./images/info/3.avif" loading="lazy" decoding="async" width="36" height="36" alt="icon">
+                            <span>Arab tilida eng ko'p <br> uchraydigan katta va kichik <br> xatolarni ko'rib chiqamiz</span>
+                        </p>
+                    </li>
+                    <li class="hero__item" style="margin-left: auto;">
+                        <p>
+                            <img src="./images/info/4.avif" loading="lazy" decoding="async" width="36" height="35" alt="icon">
+                            <span>Dangasalikni yengish va ilmda <br> barqarorlikni shakllantirish <br> yo'llarini o'rganasiz</span>
+                        </p>
+                    </li>
+                </ul>
+
+                <button class="hero__btn" onclick="location.href='../thankYou.html'">Bepul qatnashish</button>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Meta Pixel Code -->
+    <script defer>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1442631190853671');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1442631190853671&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</body>
+
+</html>
+
+</html>
