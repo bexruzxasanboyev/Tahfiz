@@ -28,14 +28,13 @@
         }
         
         .hero__box {
-            background-image: url(./images/bg.avif);
+            background-image: url(/images/bg.avif);
             background-repeat: no-repeat;
             background-size: cover;
             padding: 0 10px;
             padding-top: 18px;
             background-position: center;
             position: relative;
-            overflow: hidden;
             box-shadow: inset 12px 0 14px -8px #fff, inset -12px 0 14px -8px #fff, inset 0 -12px 14px -8px #fff;
         }
         
@@ -67,27 +66,34 @@
             max-width: 358px;
             width: 100%;
             margin: 0 auto;
-            display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 34px;
-            padding: 7px 0 5px;
+            padding: 15px 0;
         }
         
         .hero__title {
             font-family: Inter, sans-serif;
+            text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.69);
+            margin-top: -10px;
             font-weight: 700;
             color: white;
             position: relative;
-            text-shadow: 0px 3px 3px 0px #000000B0;
             font-size: clamp(22px, 7vw, 24px);
             line-height: 26px;
             text-align: center;
             text-transform: uppercase;
         }
         
-        .hero__title span {
+        h2 {
             color: black;
+            font-family: Inter, sans-serif;
+            font-weight: 700;
+            position: relative;
+            font-size: clamp(22px, 7vw, 24px);
+            line-height: 26px;
+            text-align: center;
+            text-transform: uppercase;
         }
         
         .hero__wrapper {
@@ -157,61 +163,8 @@
             line-height: 18px;
         }
     </style>
-
-    <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="./css/main.css">
-    </noscript>
-</head>
-
-<body>
-    <main>
-        <section class="hero">
-            <div class="hero__container">
-                <div class="hero__box">
-                    <div class="hero__top">
-                        <img src="./images/calendar.png" loading="lazy" decoding="async" width="13" height="14" alt="calendar">
-                        <p>2-3-May | Soat: 20:30</p>
-                    </div>
-
-                    <div class="hero__title-box">
-                        <h1 class="hero__title">Arab tilini endi <br> boshlovchilar uchun <br>
-                            <span>eng oson va samarali <br>
-                                metodlar</span>
-                        </h1>
-                    </div>
-
-                    <img class="hero__images" src="./images/speaker.avif" loading="lazy" decoding="async" width="214" height="415" alt="speaker">
-                    <button class="hero__btn" onclick="location.href='./thankYou.html'">Bepul qatnashish</button>
-                </div>
-                <div class="hero__wrapper">
-                    <ul class="hero__list">
-                        <li class="hero__item">
-                            <img src="./images/verfiy.png" loading="lazy" decoding="async" width="25" height="25" alt="verfiy">
-                            <p>Qur’oni Karimning ilk oyatlari </p>
-                        </li>
-                        <li class="hero__item">
-                            <img src="./images/verfiy.png" loading="lazy" decoding="async" width="25" height="25" alt="verfiy">
-                            <p>Arab tilida muhim bo'lgan qoidalar</p>
-                        </li>
-                        <li class="hero__item">
-                            <img src="./images/verfiy.png" loading="lazy" decoding="async" width="25" height="25" alt="verfiy">
-                            <p>Arab tilida eng ko‘p uchraydigan katta va kichikxatolar </p>
-                        </li>
-                        <li class="hero__item">
-                            <img src="./images/verfiy.png" loading="lazy" decoding="async" width="25" height="25" alt="verfiy">
-                            <p>Dangasalikni yengish va ilm yo‘lida barqarorlikni shakllantirish </p>
-                        </li>
-                    </ul>
-
-                    <button class="hero__btn" onclick="location.href='./thankYou.html'">Bepul qatnashish</button>
-                </div>
-            </div>
-        </section>
-    </main>
-
     <!-- Meta Pixel Code -->
-    <script defer>
+    <script>
         ! function(f, b, e, v, n, t, s) {
             if (f.fbq) return;
             n = f.fbq = function() {
@@ -237,8 +190,66 @@
     src="https://www.facebook.com/tr?id=1442631190853671&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
-</body>
+    <link rel="stylesheet" href="/css/main.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="/css/main.css">
+    </noscript>
+</head <body>
+<main>
+    <section class="hero">
+        <div class="hero__container">
+            <div class="hero__box">
+                <div class="hero__top">
+                    <img src="/images/calendar.png" loading="lazy" decoding="async" width="13" height="14" alt="calendar">
+                    <p>2-3-Май | Соат: 20:30</p>
+                </div>
 
+                <div class="hero__title-box">
+                    <h1 class="hero__title">Араб тилини энди <br> бошловчилар учун <br>
+                    </h1>
+                    <h2>энг осон ва самарали <br> методлар
+                    </h2>
+                </div>
+
+                <img class="hero__images" src="/images/speaker.avif" loading="lazy" decoding="async" width="214" height="415" alt="speaker">
+                <button class="hero__btn registerBtn" onclick="location.href='../thankYou.html'">Бепул қатнашиш</button>
+            </div>
+            <div class="hero__wrapper">
+                <ul class="hero__list">
+                    <li class="hero__item">
+                        <img src="/images/verfiy.png" loading="lazy" decoding="async" width="25" height="25" alt="verfiy">
+                        <p>Қуръони Каримнинг илк оятлари </p>
+                    </li>
+                    <li class="hero__item">
+                        <img src="/images/verfiy.png" loading="lazy" decoding="async" width="25" height="25" alt="verfiy">
+                        <p>Араб тилида муҳим бўлган қоидалар</p>
+                    </li>
+                    <li class="hero__item">
+                        <img src="/images/verfiy.png" loading="lazy" decoding="async" width="25" height="25" alt="verfiy">
+                        <p>Араб тилида энг кўп учрайдиган катта ва кичик хатолар </p>
+                    </li>
+                    <li class="hero__item">
+                        <img src="/images/verfiy.png" loading="lazy" decoding="async" width="25" height="25" alt="verfiy">
+                        <p>Дангасаликни енгиш ва илм йўлида барқарорликни шакллантириш </p>
+                    </li>
+                </ul>
+
+                <button class="hero__btn registerBtn" onclick="location.href='../thankYou.html'">Бепул қатнашиш</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script defer>
+    document.addEventListener("DOMContentLoaded", (() => {
+        document.querySelectorAll(".registerBtn").forEach((e => {
+            e.addEventListener("click", (() => {
+                "function" == typeof fbq && fbq("track", "CompleteRegistration")
+            }))
+        }))
+    }));
+</script>
+</body>
 
 </html>
 
